@@ -61,6 +61,46 @@ def signup_for_activity(activity_name: str, email: str):
 
     # Get the specific activity
     activity = activities[activity_name]
+    # Sports related activities
+    activities["Basketball Team"] = {
+        "description": "Join the school basketball team and compete in local leagues",
+        "schedule": "Wednesdays and Fridays, 4:00 PM - 6:00 PM",
+        "max_participants": 15,
+        "participants": []
+    }
+    activities["Soccer Club"] = {
+        "description": "Practice soccer skills and play friendly matches",
+        "schedule": "Mondays and Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": []
+    }
+    # Artistic activities
+    activities["Drama Club"] = {
+        "description": "Participate in school plays and improve acting skills",
+        "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 25,
+        "participants": []
+    }
+    activities["Art Workshop"] = {
+        "description": "Explore painting, drawing, and other visual arts",
+        "schedule": "Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": []
+    }
+    # Intellectual activities
+    activities["Math Olympiad"] = {
+        "description": "Prepare for math competitions and solve challenging problems",
+        "schedule": "Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 15,
+        "participants": []
+    }
+    activities["Science Club"] = {
+        "description": "Conduct experiments and explore scientific concepts",
+        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": []
+    }
+    activity = activities[activity_name]
 
     # Add student
     activity["participants"].append(email)
